@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations - God loves the Trinity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo">God loves the Trinity</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><button id="subscribe-btn" class="subscribe-button">Subscribe</button></li>
+        <li id="auth-container"></li>
+        <li><button id="mode-toggle" class="button-style">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="booking-header">
+      <h1>Book Your Table</h1>
+      <p class="highlighted-text">Secure your divine dining experience</p>
+    </section>
+
+    <!-- Reservation Form with Full Validation -->
+    <section class="about-content">
+      <form id="reservation-form" class="contact-form">
+        <div class="form-group">
+          <label for="guest-name">Full Name *</label>
+          <input type="text" id="guest-name" required>
+        </div>
+        <div class="form-group">
+          <label for="guest-email">Email *</label>
+          <input type="email" id="guest-email" required>
+        </div>
+        <div class="form-group">
+          <label for="guest-phone">Phone *</label>
+          <input type="tel" id="guest-phone" required>
+        </div>
+        <div class="form-group">
+          <label for="party-size">Party Size *</label>
+          <select id="party-size" required>
+            <option value="">Select size</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+            <option value="6">6+ Guests</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="reservation-date">Date *</label>
+          <input type="date" id="reservation-date" required>
+        </div>
+        <div class="form-group">
+          <label for="reservation-time">Time *</label>
+          <select id="reservation-time" required>
+            <option value="">Select time</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="17:00">5:00 PM</option>
+            <option value="18:00">6:00 PM</option>
+            <option value="19:00">7:00 PM</option>
+            <option value="20:00">8:00 PM</option>
+            <option value="21:00">9:00 PM</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="special-requests">Special Requests</label>
+          <textarea id="special-requests" rows="3" placeholder="Allergies, seating preferences, etc."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Book Reservation</button>
+      </form>
+    </section>
+
+    <section class="cta-section">
+      <h2>We Can't Wait to Serve You</h2>
+      <p>Your table is being prepared with love</p>
+    </section>
+  </main>
+
+  <!-- Popup & Auth -->
+  <div id="subscription-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span id="close-popup" class="close-btn">×</span>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on special offers and new menu items!</p>
+      <form id="subscription-form">
+        <input type="email" id="popup-email" placeholder="Enter your email" required>
+        <button type="submit" class="button-style">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="auth-modal" class="popup-overlay" style="display:none;">
+    <div class="popup-content" style="max-width:400px;">
+      <span id="close-auth" class="close-btn">×</span>
+      <h2 id="auth-title">Login</h2>
+      <form id="auth-form">
+        <div class="form-group" id="name-group" style="display:none;">
+          <label for="auth-name">Name:</label>
+          <input type="text" id="auth-name">
+        </div>
+        <div class="form-group">
+          <label for="auth-email">Email:</label>
+          <input type="email" id="auth-email" required>
+        </div>
+        <div class="form-group">
+          <label for="auth-password">Password:</label>
+          <input type="password" id="auth-password" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
+    <p>Address: 123 Divine Street, Heaven's Gate City</p>
+    <p class="datetime-display">Current time: <span id="current-datetime"></span></p>
+    <p class="team-members">Team: Newcomers(Chingiz, Sultan, Kaisar) Group: SE-2405</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
