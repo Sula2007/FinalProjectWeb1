@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - God loves the Trinity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Task 1: Flexbox Header / Nav -->
+  <header class="main-header">
+    <div class="logo">God loves the Trinity</div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html">Reservations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <!-- TASK 3: Popup subscription button -->
+        <li><button id="subscribe-btn" class="subscribe-button">Subscribe</button></li>
+        <li id="auth-container"></li>
+        <li><button id="mode-toggle" class="button-style">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu-header">
+      <h1>Our Divine Menu</h1>
+      <p class="highlighted-text">All dishes are prepared with love and the finest ingredients</p>
+      <input type="text" id="menu-search" placeholder="Search menu items..." style="width:100%; max-width:400px; margin:15px auto; display:block; padding:10px; border:2px solid var(--border); border-radius:5px;">
+    </section>
+
+    <!-- Keep your existing menu sections -->
+    <section class="menu-section">
+      <h2>Appetizers</h2>
+      <div class="menu-item" data-item="Sacred Bruschetta">
+        <div>
+          <h3>Sacred Bruschetta</h3>
+          <p>Fresh tomatoes, basil, and mozzarella on toasted bread</p>
+        </div>
+        <span class="price">$8.99</span>
+        <div class="rating" data-item="Sacred Bruschetta"></div>
+      </div>
+      <div class="menu-item" data-item="Holy Hummus Platter">
+        <div>
+          <h3>Holy Hummus Platter</h3>
+          <p>Creamy hummus with olive oil, served with warm pita bread</p>
+        </div>
+        <span class="price">$7.50</span>
+        <div class="rating" data-item="Holy Hummus Platter"></div>
+      </div>
+      <div class="menu-item" data-item="Divine Spinach Dip">
+        <div>
+          <h3>Divine Spinach Dip</h3>
+          <p>Warm spinach and artichoke dip with tortilla chips</p>
+        </div>
+        <span class="price">$9.25</span>
+        <div class="rating" data-item="Divine Spinach Dip"></div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Main Courses</h2>
+      <div class="menu-item" data-item="Trinity Pasta">
+        <div>
+          <h3>Trinity Pasta</h3>
+          <p>Three-cheese pasta with herbs and garlic in cream sauce</p>
+        </div>
+        <span class="price">$16.99</span>
+        <div class="rating" data-item="Trinity Pasta"></div>
+      </div>
+      <div class="menu-item" data-item="Blessed Burger">
+        <div>
+          <h3>Blessed Burger</h3>
+          <p>Angus beef patty with cheese, lettuce, tomato on brioche bun</p>
+        </div>
+        <span class="price">$14.50</span>
+        <div class="rating" data-item="Blessed Burger"></div>
+      </div>
+      <div class="menu-item" data-item="Heavenly Salmon">
+        <div>
+          <h3>Heavenly Salmon</h3>
+          <p>Grilled salmon with lemon butter sauce and seasonal vegetables</p>
+        </div>
+        <span class="price">$19.75</span>
+        <div class="rating" data-item="Heavenly Salmon"></div>
+      </div>
+      <div class="menu-item" data-item="Sacred Chicken">
+        <div>
+          <h3>Sacred Chicken</h3>
+          <p>Herb-crusted chicken breast with roasted potatoes</p>
+        </div>
+        <span class="price">$17.25</span>
+        <div class="rating" data-item="Sacred Chicken"></div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Desserts</h2>
+      <div class="menu-item" data-item="Angel Food Cake">
+        <div>
+          <h3>Angel Food Cake</h3>
+          <p>Light sponge cake with fresh berries and whipped cream</p>
+        </div>
+        <span class="price">$6.99</span>
+        <div class="rating" data-item="Angel Food Cake"></div>
+      </div>
+      <div class="menu-item" data-item="Divine Chocolate Mousse">
+        <div>
+          <h3>Divine Chocolate Mousse</h3>
+          <p>Rich chocolate mousse topped with gold flakes</p>
+        </div>
+        <span class="price">$8.50</span>
+        <div class="rating" data-item="Divine Chocolate Mousse"></div>
+      </div>
+      <div class="menu-item" data-item="Blessed Tiramisu">
+        <div>
+          <h3>Blessed Tiramisu</h3>
+          <p>Traditional Italian tiramisu with coffee and mascarpone</p>
+        </div>
+        <span class="price">$7.75</span>
+        <div class="rating" data-item="Blessed Tiramisu"></div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-item" data-item="Holy Water">
+        <div>
+          <h3>Holy Water (Sparkling)</h3>
+          <p>Premium sparkling water with lemon</p>
+        </div>
+        <span class="price">$3.50</span>
+        <div class="rating" data-item="Holy Water"></div>
+      </div>
+      <div class="menu-item" data-item="Sacred Coffee">
+        <div>
+          <h3>Sacred Coffee</h3>
+          <p>Freshly brewed coffee from blessed beans</p>
+        </div>
+        <span class="price">$4.25</span>
+        <div class="rating" data-item="Sacred Coffee"></div>
+      </div>
+      <div class="menu-item" data-item="Divine Wine">
+        <div>
+          <h3>Divine Wine Selection</h3>
+          <p>Ask your server about our wine of the day</p>
+        </div>
+        <span class="price">$8.00</span>
+        <div class="rating" data-item="Divine Wine"></div>
+      </div>
+    </section>
+
+    <!-- Daily Special from API -->
+    <section class="menu-section">
+      <h2>Daily Special</h2>
+      <div id="daily-special"></div>
+    </section>
+
+    <div class="cta-section">
+      <h2>Ready to Dine?</h2>
+      <p>Make a reservation to secure your table</p>
+      <a href="reserve.html" class="button-style">Book Now</a>
+    </div>
+  </main>
+
+  <!-- TASK 3: Popup Subscription Form -->
+  <div id="subscription-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span id="close-popup" class="close-btn">&times;</span>
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get the latest updates on special offers and new menu items!</p>
+      <form id="subscription-form">
+        <input type="email" id="popup-email" placeholder="Enter your email" required>
+        <button type="submit" class="button-style">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="popup-overlay" style="display:none;">
+    <div class="popup-content" style="max-width:400px;">
+      <span id="close-auth" class="close-btn">&times;</span>
+      <h2 id="auth-title">Login</h2>
+      <form id="auth-form">
+        <div class="form-group" id="name-group" style="display:none;">
+          <label for="auth-name">Name:</label>
+          <input type="text" id="auth-name">
+        </div>
+        <div class="form-group">
+          <label for="auth-email">Email:</label>
+          <input type="email" id="auth-email" required>
+        </div>
+        <div class="form-group">
+          <label for="auth-password">Password:</label>
+          <input type="password" id="auth-password" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
+    <p>Address: 123 Divine Street, Heaven's Gate City</p>
+    <!-- TASK 5: Current Date and Time -->
+    <p class="datetime-display">Current time: <span id="current-datetime"></span></p>
+    <p class="team-members">Team: Newcomers(Chingiz, Sultan, Kaisar) Group: SE-2405</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
