@@ -18,8 +18,6 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="reserve.html">Reservations</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <!-- TASK 3: Popup subscription button -->
-        <li><button id="subscribe-btn" class="subscribe-button">Subscribe</button></li>
       </ul>
     </nav>
   </header>
@@ -46,7 +44,7 @@
     </section>
 
     <section class="chef-info" style="display:flex; gap:20px; align-items:center; margin: 20px;">
-      <img src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      <img src="https://images.unsplash.com/photo-1583394293214-28a4b0c0a0e1?w=300&h=300&fit=crop&crop=face"
            alt="Head Chef" class="chef-photo" style="border-radius: 12px;">
       <div class="chef-text">
         <h2>Meet Our Head Chef</h2>
@@ -72,62 +70,6 @@
         <li>Providing exceptional service that makes every visit memorable</li>
         <li>Maintaining the highest standards of cleanliness and safety</li>
       </ul>
-    </section>
-
-    <!-- TASK 2: Accordion FAQ Section -->
-    <section class="about-content">
-      <h2>Frequently Asked Questions</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <h3>Do you take reservations?</h3>
-            <span class="accordion-icon">+</span>
-          </div>
-          <div class="accordion-content">
-            <p>Yes! We highly recommend making reservations, especially for dinner service and weekends. You can book online through our Reservations page or call us at (555) 123-HOLY.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <h3>Do you offer vegetarian or vegan options?</h3>
-            <span class="accordion-icon">+</span>
-          </div>
-          <div class="accordion-content">
-            <p>Absolutely! We have several vegetarian dishes on our menu, and our chef can modify many dishes to accommodate vegan diets. Please let your server know about any dietary restrictions.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <h3>Is there parking available?</h3>
-            <span class="accordion-icon">+</span>
-          </div>
-          <div class="accordion-content">
-            <p>Yes, we offer free parking for our guests in the lot behind the restaurant. Street parking is also available on Divine Street.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <h3>Do you cater private events?</h3>
-            <span class="accordion-icon">+</span>
-          </div>
-          <div class="accordion-content">
-            <p>Yes! We offer catering services and have a private dining room for special events. Please contact us directly to discuss your event needs and we'll create a custom menu for you.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            <h3>What are your hours of operation?</h3>
-            <span class="accordion-icon">+</span>
-          </div>
-          <div class="accordion-content">
-            <p>We're open Monday-Thursday: 11am-9pm, Friday-Saturday: 11am-10pm, and Sunday: 12pm-8pm. We're closed on major holidays.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="about-content">
@@ -158,28 +100,9 @@
     </section>
   </main>
 
-  <!-- TASK 3: Popup Subscription Form -->
-  <div id="subscription-popup" class="popup-overlay">
-    <div class="popup-content">
-      <span id="close-popup" class="close-btn">&times;</span>
-      <h2>Subscribe to Our Newsletter</h2>
-      <p>Get the latest updates on special offers and new menu items!</p>
-      <form id="subscription-form">
-        <input type="email" id="popup-email" placeholder="Enter your email" required>
-        <button type="submit" class="button-style">Subscribe</button>
-      </form>
-    </div>
-  </div>
-
   <footer>
     <p>&copy; 2024 God loves the Trinity Restaurant. All rights reserved.</p>
     <p>Address: 123 Divine Street, Heaven's Gate City</p>
-    <!-- TASK 5: Current Date and Time -->
-    <p class="datetime-display">Current time: <span id="current-datetime"></span></p>
-    <p class="team-members">Team: Newcomers(Chingiz, Sultan, Kaisar) Group: SE-2405</p>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
